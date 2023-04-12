@@ -1,0 +1,92 @@
+@media screen and (max-width:1200px) {
+    .header-container .nav-menu{
+        position: absolute;
+        right: -100%;
+        top: 0;
+    }
+    .header-container .nav-container{
+        justify-content: space-between;
+        box-shadow: 0 0 1rem #000;
+        position: fixed;
+        z-index: 10;
+    }
+    .header-container .nav-container .menu-lines{
+        display: block;
+    }
+
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(1){
+        transform: translateY(-.8rem) rotate(45deg);
+        transition: .3s all;
+    }
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(2){
+        opacity: 0;
+    }
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(3){
+        transform: translateY(.9rem) rotate(-45deg);
+        transition: .3s all;
+    }
+    .header-container .nav-menu.active{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        right: 0;
+        transition: .3s all;
+        box-shadow:   0 1rem 2rem .2rem #000;
+    }
+
+    
+    
+    /* main */
+    .main-content-section{
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding:  0 2rem;
+    }
+    .main-content-section .left-side img{
+        height: 20rem;
+        margin-top: 5rem;
+        margin-bottom: -3rem;
+    }
+    .main-content-section .right-side {
+        width: 100%;   
+        text-align: center;
+            }
+
+    .main-content-section .right-side h3{
+        font-size: 2rem;
+    }
+    .main-content-section .right-side h1{
+        font-size: 3.5rem;
+    }
+    .main-content-section .right-side p{
+        font-size: 1.2rem;
+        width: 80%;
+        margin: auto;
+    }
+    .main-content-section .right-side .container-btn{
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .main-content-section .right-side .container-social{
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:576px) {
+    
+}
+@media screen and (max-width:360px) {
+   
+}

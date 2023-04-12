@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: poppins, sans-serif;
+    background-color: #333;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+}
+.header-container .nav-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem ;
+    box-shadow: 0 0 1rem #000;
+    position: fixed;
+    z-index: 10;
+}
+.nav-container ul{
+    color: #fff;
+    display: flex;
+    width: 35rem;
+    justify-content: space-around;
+}
+
+.nav-container ul li{
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: .2s all;
+    text-shadow: 0  .1rem .2rem #000;
+}
+.nav-container li:hover{
+    transition: .2s all;
+    color: aquamarine;
+}
+
+/* menu hamburguer */
+.header-container .nav-container .menu-lines{
+    position: absolute;
+    z-index: 11;
+    width: 45px;
+    height: 35px;
+    right: 6vw;
+    top:30%;
+    display: none;
+}
+
+.header-container .nav-container .menu-lines .bar{
+    display: block;
+    width: 45px;
+    height: 3px;
+    border-radius: 10px;
+    margin-bottom: 11px;
+    background-color: #fff;
+    transition: .3s all;
+}
+
+/* <!-- main-section-info --> */
+.main-content-section{
+    height: 105vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+.left-side img{
+    border-radius: 50%;
+    height:25rem;
+    border: 6px solid aquamarine;
+}
+
+.main-content-section .right-side{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: .8rem;
+    width: 30vw;
+}
+
+.main-content-section .right-side h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.main-content-section .right-side span{
+    color: aquamarine;
+}
+.main-content-section .right-side h1{
+    font-size: 5rem;
+    color: #fff;
+}
+.main-content-section .right-side p{
+    width: min(50rem, 40vw);
+    font-size: 1.3rem;
+    color: #fff;
+}
+.right-side .container-btn{
+    width: 30rem;
+    margin: 1rem 0 1rem 0;
+}
+.right-side .container-btn button{
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .2s all;
+}
+.right-side .container-btn .btn-cv{
+    background-color: aquamarine;
+    color: #333;
+    filter: brightness(.9);
+}
+.right-side .container-btn .btn-cv:hover{
+    background-color: aquamarine;
+    color: #333;
+    font-weight: bold;
+    filter: brightness(1);
+    transition: .2s all;
+    box-shadow:  0 0 .1rem .1rem rgb(127, 232, 255);
+}
+.right-side .container-btn .btn-contact{
+    color: aquamarine;
+    filter: brightness(.9);
+    transition: .2s all;
+}
+.right-side .container-btn .btn-contact:hover{
+    color: aquamarine;
+    filter: brightness(1);
+    transition: .2s all;
+    box-shadow:  0 0 .1rem .1rem aquamarine;
+}
+.right-side .container-social{
+    width: 20rem;
+}
+.right-side .container-social i{
+    font-size: 2.5rem;
+    color: aquamarine;
+    cursor: pointer;
+    margin-right: 2rem;
+    filter: brightness(.8);
+    background-color: transparent;
+    transition: .2s all;
+}
+
+.right-side .container-social i:hover{
+    filter: brightness(1);
+    transition: .2s all;
+}
+
+
+/* All sections */
+
+.About-section,
+.Skills-section,
+.Projects-section,
+.Contact-section{
+    height: 110vh;
+    border: 2px solid red;
+    margin: auto;
+}
