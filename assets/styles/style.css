@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: poppins, sans-serif;
-    background-color: #333;
+    background-color: #1e1e1e;
 }
 html {
     scroll-behavior: smooth;
@@ -115,17 +115,18 @@ html {
 }
 .right-side .container-btn{
     width: 30rem;
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
 }
-.right-side .container-btn button{
+.right-side .container-btn a {
     color: #fff;
     font-size: 1rem;
-    padding: 1rem 2.5rem;
+    padding: 1.2rem 2.5rem;
     margin-right: 1rem;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
     transition: .2s all;
+    box-shadow:  0 0 4px 1px #ffffff38;
 }
 .right-side .container-btn .btn-cv{
     background-color: aquamarine;
@@ -159,7 +160,7 @@ html {
 .Skills-section,
 .Projects-section,
 .Contact-section{
-    height: 100vh;
+    height: 70vh;
     margin: auto;
     /* clip-path: polygon( 
         0% 50%,
@@ -167,20 +168,19 @@ html {
         100% calc(100% - 30%),
         10% 100%
       ); */
+      /* border: 2px solid red; */
 }
 
 /* About section */
 .About-section{
     background-color: #000000;
-    height: 80vh;
     display: flex;
-    
 }
 .container-about{
     width: 1150px;
     background-color: #191919;
     border-radius: 10px;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     margin:  auto;
     display: flex;
     flex-direction: row;
@@ -190,6 +190,7 @@ html {
 .container-about img{
     height: 500px;
     border-radius: 7px;
+    margin: auto;
     box-shadow: 0 0 10px 5px #000;
 }
 .container-about .container-about-text{
@@ -209,6 +210,7 @@ html {
     font-size: 1.7rem;
 }
 
+
 .container-about .container-about-text h2{
     color: #fff;
     font-size: 2.5rem;
@@ -216,7 +218,7 @@ html {
 }
 
 .container-about .container-about-text h3{
-    color: aquamarine;
+    color: #aaf4db;
     font-size: 1.2rem;
     margin-top: 2rem;
 }
@@ -248,10 +250,65 @@ html {
 
 .container-about .container-about-text .container-social a{
     background-color: transparent;
-    
 }
 
 .container-about .container-about-text .container-social i:hover{
     filter: brightness(1);
     box-shadow: 0 0 2px 2px aquamarine;
+}
+
+/* Skills section */
+
+.container-skills{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+.container-skills h3{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 2rem auto;
+}
+.container-skills span{
+    color: aquamarine;
+}
+
+.container-skills-show{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1300px;
+    margin: 1rem auto;
+}
+.container-skills-show i{
+    font-size: 5rem;
+    color: aquamarine;
+    cursor: pointer;
+    filter: brightness(.8);
+    transition: .2s all;
+    background-color: #1f1f1f;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.container-skills-show i:hover{
+    filter: brightness(1);
+    transition: .2s all;
+    box-shadow: 0 0 2px 2px aquamarine;
+}
+
+.container-description{
+    
+    width: 1300px;
+    margin: 3rem auto;
+    color: #fff;
+    font-size: 1.3rem;
+}
+/* Projects-Section */
+
+.Projects-section{
+    background-color: #000;
 }
