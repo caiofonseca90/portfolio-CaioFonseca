@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/animation.css">
     <link rel="stylesheet" href="assets/styles/responsive.css">
-    <script src="assets/script/main.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
     
     <title>Caio Fonseca - WebSite</title>
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container" id="SecHome">
         <nav class="nav-container">
             <div class="logo-header">
                 <span>cf</span>
@@ -23,11 +24,11 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li class="iten-menu">Home</li>
-                <li class="iten-menu">About</li>
-                <li class="iten-menu">Skills</li>
-                <li class="iten-menu">Projects</li>
-                <li class="iten-menu">Contact</li>
+                <li class="iten-menu"><a href="#SecHome">Home</a></li>
+                <li class="iten-menu"><a href="#SecAbout">About</a></li>
+                <li class="iten-menu"><a href="#SecSkill">Skills</a></li>
+                <li class="iten-menu"><a href="#SecProjects">Projects</a></li>
+                <li class="iten-menu"><a href="#SecContact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,9 +36,9 @@
     <!-- main-section-info -->
 
     <main class="main-content-section">
-        <section class="left-side">
+        <div class="left-side">
             <img src="assets/img/foto.jpg" alt="Foto">
-        </section>
+        </div>
 
         <section class="right-side">
             <h3 class="text-h3">Hi, i'm <span>Web Developer</span></h3>
@@ -48,33 +49,49 @@
                 <button class="btn-cv">Donload CV</button>
                 <button class="btn-contact">Contact</button>
             </div>
-            <div class="container-social">
-                <a href="https://instagram.com/_caioseca?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100009703050522"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://github.com/caiofonseca90"><i class="fa-brands fa-github"></i></a>
-            </div>
         </section>
     </main>
     
-    <section class="About-section">
-        <div class="toggle-hamburguer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+<!-- About -->
+    <section class="About-section" id="SecAbout">
+
+        <div class="container-about">
+            <img src="assets/img/foto.jpg" alt="photo">
+            <div class="container-about-text">
+                <h4>Quem Sou.</h4>
+                <h2>Caio Fonseca</h2>
+                <h3>Front-End Developer & UI Desinger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur quae repudiandae est doloremque.
+                    Sunt nulla obcaecati deserunt? Autem quae tempore quibusdam, porro aspernatur perspiciatis ex quia officiis asperiores nihil?
+                </p>
+                <div class="container-social">
+                    <a href="https://instagram.com/_caioseca?igshid=ZDdkNTZiNTM=" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009703050522"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://github.com/caiofonseca90"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/caio-fonseca-01251217b/"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section class="Skills-section">
 
     </section>
 
-    <section class="Projects-section">
+<!-- Skills -->
+    <section class="Skills-section" id="SecSkill">
 
     </section>
 
-    <section class="Contact-section">
+<!-- Projects -->
+    <section class="Projects-section" id="SecProjects">
 
     </section>
+
+<!-- Contact -->
+    <section class="Contact-section" id="SecContact">
+
+    </section>
+
     <script src="https://kit.fontawesome.com/5cc787f607.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

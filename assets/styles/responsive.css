@@ -1,12 +1,11 @@
 @media screen and (max-width:1200px) {
-    .header-container .nav-menu{
+    .header-container .nav-container .nav-menu{
         position: absolute;
         right: -100%;
         top: 0;
     }
     .header-container .nav-container{
         justify-content: space-between;
-        box-shadow: 0 0 1rem #000;
         position: fixed;
         z-index: 10;
     }
@@ -15,15 +14,20 @@
     }
 
     .header-container .nav-container .menu-lines.active .bar:nth-last-child(1){
+        width: 40px;
         transform: translateY(-.8rem) rotate(45deg);
-        transition: .3s all;
+        transition: .4s all;
+        background-color: aquamarine;
+        box-shadow:  0 0 1px 1px #000;
     }
     .header-container .nav-container .menu-lines.active .bar:nth-last-child(2){
         opacity: 0;
     }
     .header-container .nav-container .menu-lines.active .bar:nth-last-child(3){
+        width: 40px;
         transform: translateY(.9rem) rotate(-45deg);
-        transition: .3s all;
+        transition: .4s all;
+        box-shadow:  0 0 0 1px #000;
     }
     .header-container .nav-menu.active{
         position: fixed;
@@ -34,11 +38,12 @@
         text-align: center;
         align-items: center;
         right: 0;
-        transition: .3s all;
-        box-shadow:   0 1rem 2rem .2rem #000;
+        transition: .5s all;
     }
-
-    
+    .nav-container .nav-menu .iten-menu{
+        /* border: 2px solid red; */
+        margin-top: -12rem;
+    }
     
     /* main */
     .main-content-section{
@@ -55,7 +60,7 @@
     .main-content-section .right-side {
         width: 100%;   
         text-align: center;
-            }
+    }
 
     .main-content-section .right-side h3{
         font-size: 2rem;
@@ -76,8 +81,25 @@
         margin: auto;
         margin-top: 1rem;
     }
-}
 
+    /* About */
+    .container-about{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-about .container-photo img{
+        margin-top: 15rem;
+        height: 300px;
+        width: 500px;
+    }
+    .container-about .container-text-about {
+        width: 90%;
+        padding: 1rem 1rem;
+    }
+}
 @media screen and (max-width:992px) {
     
 }
@@ -86,7 +108,4 @@
 }
 @media screen and (max-width:576px) {
     
-}
-@media screen and (max-width:360px) {
-   
 }

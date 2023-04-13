@@ -7,12 +7,15 @@
     font-family: poppins, sans-serif;
     background-color: #333;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .header-container{
     display: flex;
     flex-direction: row;
 }
 .header-container .nav-container{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,6 +24,7 @@
     position: fixed;
     z-index: 10;
 }
+
 .nav-container ul{
     color: #fff;
     display: flex;
@@ -28,14 +32,19 @@
     justify-content: space-around;
 }
 
-.nav-container ul li{
+.nav-container ul li a{
     font-size: 1.2rem;
     gap: 1.5rem;
     cursor: pointer;
     transition: .2s all;
     text-shadow: 0  .1rem .2rem #000;
 }
-.nav-container li:hover{
+.nav-container a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.nav-container a:hover{
     transition: .2s all;
     color: aquamarine;
 }
@@ -59,7 +68,12 @@
     margin-bottom: 11px;
     background-color: #fff;
     transition: .3s all;
+    box-shadow:  0 0 1px 1px #000;
 }
+.header-container .nav-container .menu-lines .bar:nth-child(2){
+    background-color: aquamarine;
+}
+
 
 /* <!-- main-section-info --> */
 .main-content-section{
@@ -67,7 +81,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 2px solid red; */
     margin: auto;
 }
 .left-side img{
@@ -92,7 +105,7 @@
     color: aquamarine;
 }
 .main-content-section .right-side h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #fff;
 }
 .main-content-section .right-side p{
@@ -138,23 +151,6 @@
     transition: .2s all;
     box-shadow:  0 0 .1rem .1rem aquamarine;
 }
-.right-side .container-social{
-    width: 20rem;
-}
-.right-side .container-social i{
-    font-size: 2.5rem;
-    color: aquamarine;
-    cursor: pointer;
-    margin-right: 2rem;
-    filter: brightness(.8);
-    background-color: transparent;
-    transition: .2s all;
-}
-
-.right-side .container-social i:hover{
-    filter: brightness(1);
-    transition: .2s all;
-}
 
 
 /* All sections */
@@ -163,7 +159,99 @@
 .Skills-section,
 .Projects-section,
 .Contact-section{
-    height: 110vh;
-    border: 2px solid red;
+    height: 100vh;
     margin: auto;
+    /* clip-path: polygon( 
+        0% 50%,
+        100% 0%,
+        100% calc(100% - 30%),
+        10% 100%
+      ); */
+}
+
+/* About section */
+.About-section{
+    background-color: #000000;
+    height: 80vh;
+    display: flex;
+    
+}
+.container-about{
+    width: 1150px;
+    background-color: #191919;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin:  auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: inset 0 0 4px 1px #313131;
+}
+
+.container-about img{
+    height: 500px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px #000;
+}
+.container-about .container-about-text{
+    width: 100%;
+    background-color: transparent;
+    padding: 2rem 2rem;
+    background-color: transparent;
+    margin-top: 3rem;
+}
+.container-about .container-about-text ,h2, h3, h4 , p{
+    background-color: transparent;
+    text-shadow: 0 3px 1px #000;
+}
+
+.container-about .container-about-text h4{
+    color: aquamarine;
+    font-size: 1.7rem;
+}
+
+.container-about .container-about-text h2{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.container-about .container-about-text h3{
+    color: aquamarine;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.container-about .container-about-text p{
+    font-size: 1.2rem;
+    margin-top: 2rem ;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.container-about .container-about-text .container-social{
+    width: 100%;
+    background-color: transparent;
+    margin-top: 2rem;
+}
+.container-about .container-about-text .container-social i {
+    font-size: 3rem;
+    color: aquamarine;
+    cursor: pointer;
+    filter: brightness(.8);
+    transition: .2s all;
+    background-color: #1f1f1f;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: .8rem;
+}
+
+.container-about .container-about-text .container-social a{
+    background-color: transparent;
+    
+}
+
+.container-about .container-about-text .container-social i:hover{
+    filter: brightness(1);
+    box-shadow: 0 0 2px 2px aquamarine;
 }
