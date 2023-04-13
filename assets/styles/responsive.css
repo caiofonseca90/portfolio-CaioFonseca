@@ -1,50 +1,5 @@
-@media screen and (max-width:1200px) {
-    .header-container .nav-container .nav-menu{
-        position: absolute;
-        right: -100%;
-        top: 0;
-    }
-    .header-container .nav-container{
-        justify-content: space-between;
-        z-index: 10;
-    }
-    .header-container .nav-container .menu-lines{
-        display: block;
-    }
-
-    .header-container .nav-container .menu-lines.active .bar:nth-last-child(1){
-        width: 40px;
-        transform: translateY(-.8rem) rotate(45deg);
-        transition: .4s all;
-        background-color: aquamarine;
-        box-shadow:  0 0 1px 1px #000;
-    }
-    .header-container .nav-container .menu-lines.active .bar:nth-last-child(2){
-        opacity: 0;
-    }
-    .header-container .nav-container .menu-lines.active .bar:nth-last-child(3){
-        width: 40px;
-        transform: translateY(.9rem) rotate(-45deg);
-        transition: .4s all;
-        box-shadow:  0 0 0 1px #000;
-    }
-    .header-container .nav-menu.active{
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        align-items: center;
-        right: 0;
-        transition: .5s all;
-    }
-    .nav-container .nav-menu .iten-menu{
-        /* border: 2px solid red; */
-        margin-top: -12rem;
-    }
-    
-    /* main */
+@media screen and ( max-width:1200px) {
+   /* main */
     .main-content-section{
         height: 100vh;
         justify-content: center;
@@ -89,41 +44,45 @@
     /* About */
    .container-about{
         flex-direction: column;
-        width: 90%;
-        height: 90%;
-        margin: 2rem auto;
+        height: 90vh;
+        position: relative;
+        padding: 2rem 0;
     }
     .container-about img{
-        height: 300px;
-        width: 90%;
-        margin: auto;
+       width: 90%;
+       height: 23rem;
     }
     .container-about .container-about-text{
-        text-align: start;
+      
+       
+    }
+    .container-about .container-about-text h2, h3, h4, p{
+        padding: 0;
+        
     }
     .container-about .container-about-text h2{
-        font-size: 2rem;
-        margin-bottom: -1rem;
+        
     }
     .container-about .container-about-text h3{
-        font-size: 1.2rem;
+      
     }
     .container-about .container-about-text h4{
-        font-size: 1.2rem;
+        margin: -2rem 0 1rem 0;
     }
-    .container-about .container-about-text h4{
-        font-size: 1rem;
+    .container-about .container-about-text .container-social  {
+
     }
     .container-about .container-about-text .container-social i {
-        font-size: 2.5rem;
+        
     }
 /* Skills */
     .container-skills{
         align-items: center;
-        justify-content: space-around;
     }
     .container-skills .container-skills-show {
         width: 90%;
+        align-items: start;
+        gap: 1rem;
     }
     .container-skills .container-skills-show i{
         font-size: 3rem;
@@ -135,10 +94,120 @@
 
 }
 @media screen and (max-width:992px) {
+    .header-container .nav-container .nav-menu{
+        position: absolute;
+        right: -100%;
+        top: 0;
+    }
+    .header-container .nav-container{
+        justify-content: space-between;
+        z-index: 10;
+    }
+    .header-container .nav-container .menu-lines{
+        display: block;
+    }
+
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(1){
+        width: 40px;
+        transform: translateY(-.8rem) rotate(45deg);
+        transition: .4s all;
+        background-color: aquamarine;
+        box-shadow:  0 0 1px 1px #000;
+    }
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(2){
+        opacity: 0;
+    }
+    .header-container .nav-container .menu-lines.active .bar:nth-last-child(3){
+        width: 40px;
+        transform: translateY(.9rem) rotate(-45deg);
+        transition: .4s all;
+        box-shadow:  0 0 0 1px #000;
+    }
+    .header-container .nav-menu.active{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        right: 0;
+        transition: .5s all;
+    }
+    .nav-container .nav-menu .iten-menu{
+        margin-top: -12rem;
+    }
     
+    .container-about{
+        flex-direction: column;
+        height: 90vh;
+        position: relative;
+        padding: 2rem 0;
+    }
+    .container-about img{
+       width: 90%;
+       height: 23rem;
+    }
+    .container-about .container-about-text{
+      
+       
+    }
+    .container-about .container-about-text h2, h3, h4, p{
+        padding: 0;
+        
+    }
+    .container-about .container-about-text h2{
+        font-size: 1.8rem;
+    }
+    .container-about .container-about-text h3{
+        font-size: 1.1rem;
+    }
+    .container-about .container-about-text h4{
+        margin: -2rem 0 1rem 0;
+        font-size: 1.5rem;
+    }
+    .container-about .container-about-text p{
+        font-size: 1rem;
+    }
+    
+    .container-about .container-about-text .container-social i {
+        font-size: 2.5rem;
+    }
+/* Skills */
+    .container-skills{
+        background-color: aqua;
+        
+    }
+    .container-skills .container-skills-show {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+    .container-skills .container-skills-show i{
+        font-size: 2.5rem;
+        
+    }
+    .container-skills .container-description {
+        width: 80%;
+    }
+
 }
 @media screen and (max-width:768px) {
-    
+    .container-skills{
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container-skills .container-skills-show {
+        width: 90%;
+    }
+    .container-skills .container-skills-show i{
+        font-size: 2.5rem;
+        
+    }
+    .container-skills .container-description {
+        width: 80%;
+    }
 }
 @media screen and (max-width:576px) {
     

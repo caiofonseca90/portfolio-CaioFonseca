@@ -1,7 +1,18 @@
+const data = {
+    Js: 'Linguagem de programação abla blab ',
+    Css: 'Folha de estilo ',
+    Html: 'Linguagem de marcação',
+    React: 'Frame de js',
+    Bootstrap: 'Frame de Css ',
+    Figma: 'Ferramenta de design',
+}
+
 const menuiten = document.querySelector('.menu-lines');
 const NavMenu = document.querySelector('.nav-menu')
 const navbar = document.querySelector('.nav-container');
 const menuLink = document.querySelectorAll('.nav-menu a[href^="#"]')
+
+const boxSkills = document.querySelectorAll('.container-skills-show' )
 
 // função que leva até a section clicada pelo atributo referenciado na função " setDistanceTop"
 function scrollToSection(evento) {
@@ -35,4 +46,13 @@ menuiten.addEventListener('click', () =>{
 
 
 
+
+
+boxSkills.forEach((iten) => {
+    iten.addEventListener('click', () =>{
+        iten.getElementsByClassName(".iconSkill");
+        
+        
+    })
+})
 
