@@ -52,29 +52,14 @@
        width: 90%;
        height: 23rem;
     }
-    .container-about .container-about-text{
-      
-       
-    }
     .container-about .container-about-text h2, h3, h4, p{
         padding: 0;
-        
     }
-    .container-about .container-about-text h2{
-        
-    }
-    .container-about .container-about-text h3{
-      
-    }
+   
     .container-about .container-about-text h4{
         margin: -2rem 0 1rem 0;
     }
-    .container-about .container-about-text .container-social  {
-
-    }
-    .container-about .container-about-text .container-social i {
-        
-    }
+   
 /* Skills */
     .container-skills{
         align-items: center;
@@ -148,13 +133,8 @@
        width: 90%;
        height: 23rem;
     }
-    .container-about .container-about-text{
-      
-       
-    }
     .container-about .container-about-text h2, h3, h4, p{
         padding: 0;
-        
     }
     .container-about .container-about-text h2{
         font-size: 1.8rem;
@@ -175,7 +155,7 @@
     }
 /* Skills */
     .container-skills{
-        background-color: aqua;
+        
         
     }
     .container-skills .container-skills-show {
