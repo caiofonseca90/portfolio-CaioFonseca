@@ -141,7 +141,6 @@
         align-items: center;
         right: 0;
         transition: .5s all;
-        /* border: 2px solid red; */
     }
     .nav-container .nav-menu .iten-menu{
         margin-top: -12rem;
@@ -227,7 +226,6 @@
         margin: 5rem auto;
     }
     .container-skills{
-        
         align-items: center;
         justify-content: center;
     }
@@ -270,23 +268,20 @@
     }
 }
 @media screen and (max-width:576px) {
-    .About-section,
-    .Skills-section,
-    .Projects-section,
-    .Contact-section{
-        height: 100vh;
-        margin-top: 12rem;
+    .Skills-section{
+        margin-top: 10rem;
     }
     .main-content-section .left-side .photo-caio{
         height: 15rem;
     }
     .main-content-section .right-side {
-        width: 100%;   
+        width: 400px;   
         text-align: center;
         margin-bottom: 1rem;
     }
     .main-content-section .right-side {
         text-align: center;
+        align-items: center;
         
     }
     .main-content-section .right-side h3{
@@ -350,7 +345,7 @@
     }
     .container-projects .container-projects-show .project{
         width: 350px;
-        height: 300PX;
+        height: 300px;
     }
    .container-projects .container-projects-show .project .layer-project h4{
         font-size: 1.5rem;
@@ -369,7 +364,9 @@
     /* contact */
     .container-contact form{
         height: 40rem;
-        width:  100%;
+        width:  90%;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
         margin:  auto ;
         padding: 2rem 0;
