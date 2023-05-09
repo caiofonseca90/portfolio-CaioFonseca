@@ -143,8 +143,7 @@ const descriptiontionWriter = () =>{
 }
 descriptiontionWriter();
 
-
-
+// events
 btnEnviar.addEventListener('click', function validationINputs(e){
     e.preventDefault()
     let nome = inputNome.value;
@@ -173,6 +172,8 @@ btnEnviar.addEventListener('click', function validationINputs(e){
             break;
     }
 })
+
+
 
 
 // Reveal
