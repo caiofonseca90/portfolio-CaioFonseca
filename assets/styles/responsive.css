@@ -1,4 +1,12 @@
-:root{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: poppins, sans-serif;
+    background-color: var(--bg-color-odd);
+}:root{
     --main-color: #7fffd4;
     --main-bg-color: #0c0c0c;
     --color-white:#fff;
@@ -209,8 +217,6 @@
         height: 2.5rem;
         margin: .5rem 0;
     }
-
-    
 }
 @media screen and (max-width:768px) {
     .About-section,
@@ -221,6 +227,7 @@
         margin: 5rem auto;
     }
     .container-skills{
+        
         align-items: center;
         justify-content: center;
     }
@@ -229,7 +236,6 @@
     }
     .container-skills .container-skills-show i{
         font-size: 2.5rem;
-        
     }
     .container-skills .container-description {
         width: 80%;
@@ -268,23 +274,26 @@
     .Skills-section,
     .Projects-section,
     .Contact-section{
-        height: 100%;
-        margin: 5rem auto;
+        height: 100vh;
+        margin-top: 12rem;
     }
     .main-content-section .left-side .photo-caio{
-        height: 16rem;
-        margin: 2rem auto;
+        height: 15rem;
     }
     .main-content-section .right-side {
         width: 100%;   
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .main-content-section .right-side {
+        text-align: center;
+        
     }
     .main-content-section .right-side h3{
         font-size: 1.5rem;
     }
     .main-content-section .right-side h2{
-        font-size: 1,8rem;
+        font-size: 1.8rem;
     }
     .right-side .container-btn{
         width: 25rem;
@@ -301,6 +310,7 @@
         transition: .2s all;
         box-shadow:  0 0 4px 1px #ffffff38;
     }
+    
     /* About */
     .container-about .container-about-text{
         padding: 1rem 2rem;
@@ -337,6 +347,10 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+    .container-projects .container-projects-show .project{
+        width: 350px;
+        height: 300PX;
     }
    .container-projects .container-projects-show .project .layer-project h4{
         font-size: 1.5rem;
